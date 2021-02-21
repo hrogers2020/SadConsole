@@ -33,6 +33,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SadConsole", "src\SadConsol
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoProjectCoreApp", "src\DemoProject\SharedCode\DemoProjectCoreApp.csproj", "{DCFA9200-A0E0-498D-AC3F-767272797720}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SadConsole_Demo", "SadConsole_Demo\SadConsole_Demo.csproj", "{CA27155A-2229-4264-93DE-B8F58156E60A}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		src\DemoProject\SharedCode\DemoProject.projitems*{74327ccc-4606-40b8-9587-60e55b1d6a80}*SharedItemsImports = 4
@@ -240,6 +242,34 @@ Global
 		{DCFA9200-A0E0-498D-AC3F-767272797720}.Release|x64.Build.0 = Release|Any CPU
 		{DCFA9200-A0E0-498D-AC3F-767272797720}.Release|x86.ActiveCfg = Release|Any CPU
 		{DCFA9200-A0E0-498D-AC3F-767272797720}.Release|x86.Build.0 = Release|Any CPU
+		{CA27155A-2229-4264-93DE-B8F58156E60A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA27155A-2229-4264-93DE-B8F58156E60A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA27155A-2229-4264-93DE-B8F58156E60A}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{CA27155A-2229-4264-93DE-B8F58156E60A}.Debug|ARM.Build.0 = Debug|Any CPU
+		{CA27155A-2229-4264-93DE-B8F58156E60A}.Debug|Linux.ActiveCfg = Debug|Any CPU
+		{CA27155A-2229-4264-93DE-B8F58156E60A}.Debug|Linux.Build.0 = Debug|Any CPU
+		{CA27155A-2229-4264-93DE-B8F58156E60A}.Debug|MacOS.ActiveCfg = Debug|Any CPU
+		{CA27155A-2229-4264-93DE-B8F58156E60A}.Debug|MacOS.Build.0 = Debug|Any CPU
+		{CA27155A-2229-4264-93DE-B8F58156E60A}.Debug|Windows.ActiveCfg = Debug|Any CPU
+		{CA27155A-2229-4264-93DE-B8F58156E60A}.Debug|Windows.Build.0 = Debug|Any CPU
+		{CA27155A-2229-4264-93DE-B8F58156E60A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CA27155A-2229-4264-93DE-B8F58156E60A}.Debug|x64.Build.0 = Debug|Any CPU
+		{CA27155A-2229-4264-93DE-B8F58156E60A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CA27155A-2229-4264-93DE-B8F58156E60A}.Debug|x86.Build.0 = Debug|Any CPU
+		{CA27155A-2229-4264-93DE-B8F58156E60A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA27155A-2229-4264-93DE-B8F58156E60A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA27155A-2229-4264-93DE-B8F58156E60A}.Release|ARM.ActiveCfg = Release|Any CPU
+		{CA27155A-2229-4264-93DE-B8F58156E60A}.Release|ARM.Build.0 = Release|Any CPU
+		{CA27155A-2229-4264-93DE-B8F58156E60A}.Release|Linux.ActiveCfg = Release|Any CPU
+		{CA27155A-2229-4264-93DE-B8F58156E60A}.Release|Linux.Build.0 = Release|Any CPU
+		{CA27155A-2229-4264-93DE-B8F58156E60A}.Release|MacOS.ActiveCfg = Release|Any CPU
+		{CA27155A-2229-4264-93DE-B8F58156E60A}.Release|MacOS.Build.0 = Release|Any CPU
+		{CA27155A-2229-4264-93DE-B8F58156E60A}.Release|Windows.ActiveCfg = Release|Any CPU
+		{CA27155A-2229-4264-93DE-B8F58156E60A}.Release|Windows.Build.0 = Release|Any CPU
+		{CA27155A-2229-4264-93DE-B8F58156E60A}.Release|x64.ActiveCfg = Release|Any CPU
+		{CA27155A-2229-4264-93DE-B8F58156E60A}.Release|x64.Build.0 = Release|Any CPU
+		{CA27155A-2229-4264-93DE-B8F58156E60A}.Release|x86.ActiveCfg = Release|Any CPU
+		{CA27155A-2229-4264-93DE-B8F58156E60A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -160,7 +160,7 @@ namespace SadConsole
         /// Adds an existing control to this console.
         /// </summary>
         /// <param name="control">The control to add.</param>
-        public void Add(ControlBase control)
+        public void Add(ControlBase control)    
         {
             if (!ControlsList.Contains(control))
             {

@@ -9,7 +9,7 @@
     public sealed class ParseCommandBlink : ParseCommandBase
     {
         public int Counter;
-        public double Speed = 0.35d;
+        public double Speed = 0.75d;
 
         private readonly CustomBlinkEffect BlinkEffect;
 

@@ -25,7 +25,7 @@ namespace SadConsole_Demo
         public bool MoveBy(Point positionChange)
         {
             // Check the map if we can move to this new position
-            if (SadConsole_Demo.Map.IsTileWalkable(Position + positionChange))
+            if (Program.World.CurrentMap.IsTileWalkable(Position + positionChange))
             {
                 Position += positionChange;
                 return true;

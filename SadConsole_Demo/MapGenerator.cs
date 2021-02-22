@@ -87,6 +87,15 @@ namespace SadConsole_Demo
             return _map;
         }
 
+        // Fills the map with walls
+        private void FloodWalls()
+        {
+            for (int i = 0; i < _map.Tiles.Length; i++)
+            {
+                _map.Tiles[i] = new TileWall();
+            }
+        }
+
         // carve a tunnel out of the map parallel to the x-axis
         private void CreateHorizontalTunnel(int xStart, int xEnd, int yPosition)
         {
@@ -140,14 +149,7 @@ namespace SadConsole_Demo
             _map.Tiles[location.ToIndex(_map.Width)] = new TileWall();
         }
 
-        // Fills the map with walls
-        private void FloodWalls()
-        {
-            for (int i = 0; i < _map.Tiles.Length; i++)
-            {
-                _map.Tiles[i] = new TileWall();
-            }
-        }
+        
 
         // Returns a list of points expressing the perimeter of a rectangle
         private List<Point> GetBorderCellLocations(Rectangle room)

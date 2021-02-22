@@ -3,7 +3,7 @@ using SadConsole;
 using Console = SadConsole.Console;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-
+using SadConsole.Components;
 
 namespace SadConsole_Demo
 {
@@ -20,6 +20,8 @@ namespace SadConsole_Demo
         private static int _maxRooms = 500;
         private static int _minRoomSize = 4;
         private static int _maxRoomSize = 15;
+
+        private static ScrollingConsole startingConsole;
 
         static void Main(string[] args)
         {
@@ -46,7 +48,6 @@ namespace SadConsole_Demo
         {
             // Called each logic update.
             CheckKeyboard();
-
         }
 
         // Scans the SadConsole's Global KeyboardState and triggers behaviour
@@ -64,6 +65,7 @@ namespace SadConsole_Demo
             if (SadConsole.Global.KeyboardState.IsKeyPressed(Microsoft.Xna.Framework.Input.Keys.Up))
             {
                 player.MoveBy(new Point(0, -1));
+                CenterOnActor(player);
             }
 
             // Keyboard movement for Player character: Down arrow
@@ -71,6 +73,7 @@ namespace SadConsole_Demo
             if (SadConsole.Global.KeyboardState.IsKeyPressed(Microsoft.Xna.Framework.Input.Keys.Down))
             {
                 player.MoveBy(new Point(0, 1));
+                CenterOnActor(player);
             }
 
             // Keyboard movement for Player character: Left arrow
@@ -78,6 +81,7 @@ namespace SadConsole_Demo
             if (SadConsole.Global.KeyboardState.IsKeyPressed(Microsoft.Xna.Framework.Input.Keys.Left))
             {
                 player.MoveBy(new Point(-1, 0));
+                CenterOnActor(player);
             }
 
             // Keyboard movement for Player character: Right arrow
@@ -85,6 +89,7 @@ namespace SadConsole_Demo
             if (SadConsole.Global.KeyboardState.IsKeyPressed(Microsoft.Xna.Framework.Input.Keys.Right))
             {
                 player.MoveBy(new Point(1, 0));
+                CenterOnActor(player);
             }
         }
 
@@ -108,10 +113,19 @@ namespace SadConsole_Demo
             // create an instance of player
             CreatePlayer();
 
+            // add the EntityViewSyncComponent to the player
+            player.Components.Add(new EntityViewSyncComponent());
+
             // add the player Entity to our only console
             // so it will display on screen
             startingConsole.Children.Add(player);
 
+        }
+
+        // centers the viewport camera on an Actor
+        public static void CenterOnActor(Actor actor)
+        {
+            startingConsole.CenterViewPortOnPoint(actor.Position);
         }
 
         // Create a player using the Player class

@@ -14,7 +14,7 @@ namespace SadConsole_Demo
         public bool IsBlockingLOS;
 
         // Tile's name
-        protected string Name;
+        public string Name;
 
         // TileBase is an abstract base class 
         // representing the most basic form of of all Tiles used.
